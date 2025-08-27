@@ -1,0 +1,15 @@
+wwwroot\index.html
+wwwroot\Scripts\HTMLInputControls.css
+wwwroot\Scripts\HTMLInputControls.head.html
+wwwroot\Scripts\HTMLInputControls.head.js
+wwwroot\Scripts\HTMLInputControls.js
+wwwroot\Scripts\HTMLInputControls.min.js
+wwwroot\Scripts\WebSharper.Core.JavaScript\Runtime.js
+wwwroot\Scripts\WebSharper.Core.JavaScript\Runtime.ts
+D:\WebSharper\App projects\HTMLInputControls\HTMLInputControls\wwwroot\index.html
+D:\WebSharper\App projects\HTMLInputControls\HTMLInputControls\wwwroot\Scripts\HTMLInputControls.css
+D:\WebSharper\App projects\HTMLInputControls\HTMLInputControls\wwwroot\Scripts\HTMLInputControls.head.html
+D:\WebSharper\App projects\HTMLInputControls\HTMLInputControls\wwwroot\Scripts\HTMLInputControls.head.js
+D:\WebSharper\App projects\HTMLInputControls\HTMLInputControls\wwwroot\Scripts\HTMLInputControls.js
+D:\WebSharper\App projects\HTMLInputControls\HTMLInputControls\wwwroot\Scripts\HTMLInputControls.min.js
+D:\WebSharper\App projects\HTMLInputControls\HTMLInputControls\wwwroot\Scripts\WebSharper.Core.JavaScript\Runtime.js

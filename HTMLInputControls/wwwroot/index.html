@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTMLInputControls</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Scripts/HTMLInputControls.css" />
+    <style>
+        /* Don't show the not-yet-loaded templates */
+        [ws-template], [ws-children-template] { display: none; }
+    </style>
+    <script type="text/javascript" src="Scripts/HTMLInputControls.head.js"></script>
+</head>
+<body>
+    <h1>UISynth Input Controls</h1>
+    <div id="main" ws-children-template="Main">
+        <form novalidate ws-onsubmit="SubmitForm">
+
+            <!-- Textual Inputs -->
+            <fieldset>
+                <legend>Textual Inputs</legend>
+
+                <div>
+                    <label for="text">Text</label><br />
+                    <input ws-var="TextInput" id="text" name="text" type="text" placeholder="Enter text" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="textarea">Textarea (multiline)</label><br />
+                    <textarea ws-var="Textarea" id="textarea" name="textarea" rows="4" cols="40" placeholder="Enter multiple lines"></textarea>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="password">Password</label><br />
+                    <input ws-var="Password" id="password" name="password" type="password" placeholder="••••••••" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">Email</label><br />
+                    <input ws-var="Email" id="email" name="email" type="email" placeholder="user@example.com" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="url">URL</label><br />
+                    <input ws-var="Url" id="url" name="url" type="url" placeholder="https://example.com" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="tel">Telephone</label><br />
+                    <input ws-var="Tel" id="tel" name="tel" type="tel" placeholder="+36 12 345 6789" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="search">Search</label><br />
+                    <input ws-var="Search" id="search" name="search" type="search" placeholder="Search..." />
+                </div>
+            </fieldset>
+
+            <br />
+
+            <!-- Numbers & Ranges -->
+            <fieldset>
+                <legend>Numbers & Ranges</legend>
+
+                <div>
+                    <label for="number">Number</label><br />
+                    <input ws-var="Number" id="number" name="number" type="number" min="0" max="100" step="1" value="10" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="range">Range</label><br />
+                    <input ws-var="Range" id="range" name="range" type="range" min="0" max="100" step="5" value="25" />
+                </div>
+            </fieldset>
+
+            <br />
+
+            <!-- Dates & Times -->
+            <fieldset>
+                <legend>Dates & Times</legend>
+
+                <div>
+                    <label for="date">Date</label><br />
+                    <input ws-var="Date" id="date" name="date" type="date" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="time">Time</label><br />
+                    <input ws-var="Time" id="time" name="time" type="time" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="datetime">Datetime (local)</label><br />
+                    <input ws-var="DatetimeLocal" id="datetime" name="datetime" type="datetime-local" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="month">Month</label><br />
+                    <input ws-var="Month" id="month" name="month" type="month" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="week">Week</label><br />
+                    <input ws-var="Week" id="week" name="week" type="week" />
+                </div>
+            </fieldset>
+
+            <br />
+
+            <!-- Choices -->
+            <fieldset>
+                <legend>Choice Controls</legend>
+
+                <div>
+                    <label for="select">Select (single)</label><br />
+                    <select ws-var="SelectSingle" id="select" name="select">
+                        <option value="">-- Choose one --</option>
+                        <option value="opt1">Option 1</option>
+                        <option value="opt2">Option 2</option>
+                        <option value="opt3">Option 3</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="select-multi">Select (multiple)</label><br />
+                    <select ws-var="SelectMulti" id="select-multi" name="select-multi" multiple size="4">
+                        <option value="m1">Multi 1</option>
+                        <option value="m2">Multi 2</option>
+                        <option value="m3">Multi 3</option>
+                        <option value="m4">Multi 4</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <fieldset>
+                    <legend>Radio Group</legend>
+                    <div>
+                        <input ws-onclick="PickA" id="radio-a" type="radio" name="radio-group" value="A" />
+                        <label for="radio-a">Choice A</label>
+                    </div>
+                    <div>
+                        <input ws-onclick="PickB" id="radio-b" type="radio" name="radio-group" value="B" />
+                        <label for="radio-b">Choice B</label>
+                    </div>
+                    <div>
+                        <input ws-onclick="PickC" id="radio-c" type="radio" name="radio-group" value="C" />
+                        <label for="radio-c">Choice C</label>
+                    </div>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Checkboxes</legend>
+                    <div>
+                        <input ws-var="Chk1" id="chk-1" type="checkbox" name="chk-1" />
+                        <label for="chk-1">Enable feature 1</label>
+                    </div>
+                    <div>
+                        <input ws-var="Chk2" id="chk-2" type="checkbox" name="chk-2" checked />
+                        <label for="chk-2">Enable feature 2</label>
+                    </div>
+                </fieldset>
+
+                <br>
+
+                <div>
+                    <label for="datalist">Datalist (typed suggestions)</label><br />
+                    <input ws-var="DatalistInput" id="datalist" name="datalist" list="suggestions" placeholder="Start typing..." />
+                    <datalist id="suggestions">
+                        <option value="Apple"></option>
+                        <option value="Banana"></option>
+                        <option value="Cherry"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <br />
+
+            <!-- Files & Media -->
+            <fieldset>
+                <legend>Files & Media</legend>
+
+                <div>
+                    <label for="file">File upload (single)</label><br />
+                    <input id="file" name="file" type="file" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="file-multiple">File upload (multiple)</label><br />
+                    <input id="file-multiple" name="file-multiple" type="file" multiple />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="color">Color</label><br />
+                    <input ws-var="Color" id="color" name="color" type="color" value="#4f46e5" />
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="image">Image</label><br />
+                    <input id="image" name="image" type="image" width="48" height="48" />
+                </div>
+            </fieldset>
+
+            <br />
+
+            <!-- Others -->
+            <fieldset>
+                <legend>Others</legend>
+
+                <div>
+                    <label for="hidden">Hidden (example value)</label><br />
+                    <input id="hidden" name="hidden" type="hidden" value="internal-id-123" />
+                    <small>(Not visible but included in form data)</small>
+                </div>
+
+                <br />
+
+                <div>
+                    <label for="readonly">Read-only Text</label><br />
+                    <input id="readonly" name="readonly" type="text" value="Read-only value" readonly />
+                </div>
+
+                <br />
+
+                <div>
+                    <label for="disabled">Disabled Text</label><br />
+                    <input id="disabled" name="disabled" type="text" value="Disabled value" disabled />
+                </div>
+            </fieldset>
+
+            <br />
+
+            <!-- Buttons -->
+            <fieldset>
+                <legend>Buttons</legend>
+
+                <div>
+                    <button type="button">Button</button>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
+    <script type="module" src="Scripts/HTMLInputControls.min.js"></script>
+</body>
+</html>

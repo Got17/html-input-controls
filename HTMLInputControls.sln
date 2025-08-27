@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HTMLInputControls", "HTMLInputControls\HTMLInputControls.fsproj", "{9B467F7A-BB62-4774-B69E-26C2A3E74DD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B467F7A-BB62-4774-B69E-26C2A3E74DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B467F7A-BB62-4774-B69E-26C2A3E74DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B467F7A-BB62-4774-B69E-26C2A3E74DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B467F7A-BB62-4774-B69E-26C2A3E74DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22D3B974-D2C7-47D5-87A6-A87330D55CEF}
+	EndGlobalSection
+EndGlobal
