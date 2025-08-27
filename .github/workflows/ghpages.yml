@@ -44,7 +44,7 @@ jobs:
       - name: Prepare Deployment
         run: |
           mkdir -p dist
-          cp -r ./HTMLInputControls/wwwroot/* dist/
+          cp -r HTMLInputControls/wwwroot/* dist/
 
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v4
